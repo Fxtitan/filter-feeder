@@ -1,6 +1,45 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+const isOdd = (num) => {
+return num % 2 !== 0;
+}
+
+const onlyOdds = (nums) => {
+  return nums.filter(isOdd); 
+}
+
+const isEven = (num) => {
+  return num % 2 === 0; 
+}
+
+const onlyEvens = (nums) => {
+return nums.filter(isEven); 
+}
+
+const isShort = (str) => {
+  return str.length < 7;
+}
+
+const shortNamesOnly = (strings) => {
+  return strings.filter(isShort);
+}
+
+const isDName = (name) => {
+  return name.charAt(0) === 'D';
+}
+
+const dNames = (names) => {
+  return names.filter(isDName);
+}
+
+const isTriStateArea = (shutDown) => {
+  return shutDown.endsWith('NY') ||  shutDown.endsWith('NJ') || shutDown.endsWith('CT')
+}//why cant I put && but i can put or??
+
+const triStateAreaOnly = (infected) => {
+  return infected.filter(isTriStateArea)
+}
 
 
 
